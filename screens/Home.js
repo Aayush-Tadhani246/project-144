@@ -17,7 +17,7 @@ export default class HomeScreen extends Component {
     super();
     this.state = {
       articleDetails: {},
-      ngrok_url: "https://b3c2-121-241-7-122.ngrok.io",
+      ngrok_url: "",
     };
   }
 
@@ -87,7 +87,6 @@ export default class HomeScreen extends Component {
             </View>
 
             <View style={styles.subContainer}>
-              {/* Add WebView component here to show the article url*/}
               <WebView source={{ uri: url }} />
 
               <View style={styles.iconButtonContainer}>
